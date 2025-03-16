@@ -1,0 +1,77 @@
+.contact-form {
+    width: 80%;            
+    max-width: 600px;        
+    margin: 50px auto;
+    padding: 30px;
+    background: #c4b9b9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #916c6c;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #553030;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #5f4848;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #7e474f;  
+    box-shadow: 0 0 8px #664141;  
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #574546;  
+    color: rgb(150, 127, 127);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #443d3e;  
+}
+
+.contact-form button:active {
+    background-color: #755a5d;  
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
